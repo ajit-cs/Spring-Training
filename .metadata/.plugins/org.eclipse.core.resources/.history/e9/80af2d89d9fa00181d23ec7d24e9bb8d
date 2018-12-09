@@ -1,0 +1,12 @@
+package com.cs.demo;
+
+public class FzBike {
+
+	static FzBike fzBike;
+	public static FzBike getBike()
+	{
+		if(fzBike == null)
+		System.out.println("bike factory");
+		return new FzBike();
+	}
+}

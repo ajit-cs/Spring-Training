@@ -1,0 +1,10 @@
+package com.cs.demo;
+
+import java.beans.PropertyEditorSupport;
+
+import org.springframework.beans.PropertyValuesEditor;
+
+public class AddressEditor extends PropertyEditorSupport{
+
+	
+}

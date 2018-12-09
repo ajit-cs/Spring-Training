@@ -1,0 +1,7 @@
+package com.cs.demo;
+
+public class Address {
+
+	private Integer id;
+	
+}

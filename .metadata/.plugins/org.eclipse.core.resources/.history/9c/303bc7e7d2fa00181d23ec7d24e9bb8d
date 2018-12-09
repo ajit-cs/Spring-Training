@@ -1,0 +1,7 @@
+package com.cs.demo;
+
+import java.beans.PropertyEditorSupport;
+
+public class AddressEditor extends PropertyEditorSupport{
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;texts&apos; from expression &apos;text.split(&quot;,&quot;)&apos;&#x0D;&#x0A;- Original project: &apos;BasicDemo&apos;&#x0D;&#x0A;- Variable name: &apos;texts&apos;&#x0D;&#x0A;- Destination method: &apos;com.cs.demo.AddressEditor.setAsText()&apos;&#x0D;&#x0A;- Variable expression: &apos;text.split(&quot;,&quot;)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;texts&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.cs.demo{AddressEditor.java" name="texts" replace="true" selection="218 16" stamp="1544264623289" version="1.0"/>
+</session>

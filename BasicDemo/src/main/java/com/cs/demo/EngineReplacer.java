@@ -1,0 +1,17 @@
+package com.cs.demo;
+
+import java.lang.reflect.Method;
+
+import org.springframework.beans.factory.support.MethodReplacer;
+
+public class EngineReplacer extends Engine implements MethodReplacer {
+
+	@Override
+	public Object reimplement(Object obj, Method method, Object[] args) throws Throwable {
+		
+System.out.println(obj instanceof Engine);
+		System.out.println("new start");
+		return null;
+	}
+
+}

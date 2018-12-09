@@ -1,0 +1,14 @@
+package com.cs.demo;
+
+import java.beans.PropertyEditorSupport;
+
+public class AddressEditor extends PropertyEditorSupport{
+
+	@Override
+	public void setAsText(String text) throws IllegalArgumentException {
+		
+		String[] texts = text.split(",");
+		Address address = new Address();
+		address.setPinCode(texts0[]);
+	}
+}

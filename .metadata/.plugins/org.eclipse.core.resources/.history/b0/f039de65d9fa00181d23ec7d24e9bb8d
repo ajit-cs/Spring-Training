@@ -1,0 +1,10 @@
+package com.cs.demo;
+
+public class FzBike {
+
+	
+	public FzBike getBike()
+	{
+		return new FzBike();
+	}
+}

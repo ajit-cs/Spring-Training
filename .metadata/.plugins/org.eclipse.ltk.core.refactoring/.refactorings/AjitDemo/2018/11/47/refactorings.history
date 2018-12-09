@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;bean&apos; from expression &apos;factory.getBean(&quot;employee&quot;,Employee.class)&apos;&#x0D;&#x0A;- Original project: &apos;AjitDemo&apos;&#x0D;&#x0A;- Variable name: &apos;bean&apos;&#x0D;&#x0A;- Destination method: &apos;com.cs.demo.Test.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;factory.getBean(&quot;employee&quot;,Employee.class)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;bean&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.cs.demo{Test.java" name="bean" replace="true" selection="370 48" stamp="1542951555342" version="1.0"/>
+</session>

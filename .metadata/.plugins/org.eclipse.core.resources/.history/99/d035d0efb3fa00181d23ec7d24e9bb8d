@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- <bean id="messageWriter" class="com.cs.demo.MessageWriter">
+	<property name="converters">
+		<list value-type="java.lang.String">
+			<value>abc</value>
+			<value>xyz</value>
+
+		</list>
+	</property>
+</bean>
+
+<bean id="messageConverter" class="com.cs.demo.HtmlMessageConverter"></bean> -->
+<!-- <bean id="base" abstract="true">
+<property name="country" value="india"></property>
+	<property name="pinCode" value="123456"></property>
+	<property name="state" value="mh"></property>
+
+</bean>
+<bean id="ea" class="com.cs.demo.Address" parent="base">
+	<property name="state" value="jk"></property>
+</bean>
+<bean id="ca" class="com.cs.demo.Address" parent="base">
+	
+</bean>
+<bean id="employee" class="com.cs.demo.Employee">
+	<property name="address" ref="ea"></property>
+</bean>
+<bean id="customer" class="com.cs.demo.Customer">
+	<property name="address" ref="ca"></property>
+</bean> -->
+
+<!-- <bean id="base" >
+<property name="subjects">
+<list>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<value>4</value>
+
+</list>
+</property>
+
+</bean>
+
+<bean id="comp" class="com.cs.demo.Comp" parent="base" >
+<property name="subjects">
+<list merge="default">
+<value>5</value>
+</list>
+</property>
+</bean>
+<bean id="entc" class="com.cs.demo.Entc" parent="base"></bean>
+ -->
+ <bean id ="e5" class="com.cs.demo.Employee" ></bean>
+  <bean id ="e2" class="com.cs.demo.Employee"></bean>
+   <bean id ="e3" class="com.cs.demo.Employee"></bean>
+ <bean id="office" class="com.cs.demo.Office">
+ <property name="ids">
+ <list>
+ <idref bean="e4"/>
+ <idref bean="e2"/>
+ 
+ </list>
+ </property>
+ </bean>
+ <bean id="add" class="com.cs.demo.Address" >
+ 
+ </bean>
+ 
+</beans>

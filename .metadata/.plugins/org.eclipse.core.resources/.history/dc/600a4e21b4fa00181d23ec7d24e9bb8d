@@ -1,0 +1,22 @@
+package com.cs.demo;
+
+import java.util.List;
+
+public class Office {
+	List<String> ids;
+
+	public List<String> getIds() {
+		return ids;
+	}
+
+	public void setIds(List<String> ids) {
+		this.ids = ids;
+		System.out.println(ids);
+	}
+	private Office()
+	{
+		System.out.println("office");
+	}
+ 
+ 
+}

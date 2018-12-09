@@ -1,0 +1,8 @@
+package com.cs.demo;
+
+import org.springframework.beans.propertyeditors.PropertiesEditor;
+
+public class AddressEditor extends PropertiesEditor{
+
+	
+}

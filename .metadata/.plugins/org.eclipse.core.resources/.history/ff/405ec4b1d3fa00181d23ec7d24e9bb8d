@@ -1,0 +1,36 @@
+package com.cs.test;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+
+import com.cs.demo.Comp;
+import com.cs.demo.Customer;
+import com.cs.demo.Employee;
+import com.cs.demo.Engine;
+import com.cs.demo.Entc;
+import com.cs.demo.Office;
+
+public class Test {
+
+	public static void main(String[] args) {
+		BeanFactory factory = new XmlBeanFactory(new ClassPathResource("com/cs/resource/application-context.xml"));
+	    //IMessageConverter converter = factory.getBean("messageConverter", IMessageConverter.class);
+	    
+	    //IMessageWriter writer = factory.getBean("messageWriter", IMessageWriter.class);
+	   // writer.setMessageConverter(converter);
+	   // writer.writeMessage("shubham");
+	   /* Employee employee= factory.getBean("employee", Employee.class);
+	    Customer customer = factory.getBean("customer", Customer.class);
+	   */ 
+		
+		/*Comp comp = factory.getBean("comp", Comp.class);
+		Entc entc = factory.getBean("entc", Entc.class);*/
+		
+		/*Office office = factory.getBean("office", Office.class);
+		Office office1 = factory.getBean("office", Office.class);*/
+		Engine engine = factory.getBean("engine", Engine.class);
+		engine.start();
+		System.out.println(engine.getClass().getName());
+	}
+}

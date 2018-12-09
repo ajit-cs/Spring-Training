@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee" class="com.cs.demo.Employee">
+		<property name="name" value="ajit"></property>
+		<property name="address">
+			<list value-type="com.cs.demo.Address">
+				<bean class="com.cs.demo.Address">
+					<property name="street" value="m g road">
+					</property>
+				</bean>
+				<bean class="com.cs.demo.Address">
+					<property name="street" value="m k road">
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+<bean id="employee2" class="com.cs.demo.Employee" parent="employee">
+<property name="address">
+			<list value-type="com.cs.demo.Address">
+				<bean class="com.cs.demo.Address">
+					<property name="street" value="keshav road">
+					</property>
+				</bean>
+				<bean class="com.cs.demo.Address">
+					<property name="street" value="m k road">
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="address" class="com.cs.demo.Address">
+		<property name="street" value="karve road"></property>
+	</bean>
+</beans>

@@ -1,0 +1,11 @@
+package com.cs.demo;
+
+public class FzBike {
+
+	
+	public static FzBike getBike()
+	{
+		System.out.println("bike factory");
+		return new FzBike();
+	}
+}
